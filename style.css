@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Ropa Sans',
+        sans-serif;
+}
+
+.container {
+    width: 697px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    top: 0;
+    margin: 1px solid black;
+}
+
+/* header  */
+.header__navbar {
+    height: 49px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+.header__navbar__logo {
+    color: #777777;
+    font-size: 1.8em;
+    margin-left: 50px;
+    font-weight: lighter;
+}
+
+.header__navbar__slogan {
+    color: #AAAAAA;
+    font-size: 0.6em;
+    width: 40px;
+    height: 22px;
+    margin-left: 3px;
+    font-weight: lighter;
+}
+
+.header__navbar__menu-hamburguer {
+    background-image: url("./assets/img/menu.png");
+    width: 18px;
+    height: 12px;
+    margin: 18px 31px 19px 600px;
+    cursor: pointer;
+}
+
+/* main */
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* top-image  */
+
+.top_image img {
+    width: 88%;
+    margin: 20px auto 0;
+}
+
+/* houses for sale  */
+.houses__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 37px auto 0;
+    padding: 0 45px;
+}
+
+.cards__card {
+    width: 40%;
+    height: 250px;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cards__card__image {
+    width: 100%;
+    height: 144px;
+}
+
+.cards__card__box {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cards__card__box__price {
+    font-size: 1.5em;
+    color: #888888;
+    font-weight: lighter;
+    margin-right: 125px;
+}
+
+.cards__card__box__tag {
+    width: 60px;
+    height: 21px;
+    border-radius: 10px;
+    background-color: #51D275;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orange {
+    background-color: #DC9730;
+}
+
+.cards__card__box__tag__text {
+    size: 20px;
+    color: #ffffff;
+}
+
+.cards__card__text {
+    text-align: justify;
+    font-size: 0.6em;
+    width: 90%;
+    line-height: 11px;
+    color: #555555;
+}
+
+/* select you style  */
+
+.your-style {
+    margin-top: 45px;
+}
+
+.your-style__title {
+    font-size: 1.5em;
+    color: #888888;
+    font-weight: lighter;
+}
+
+.your-style__styles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.your-style__styles__box {
+    height: 80px;
+    width: 90%;
+    margin: 13px 0;
+    background-color: #777777;
+    align-items: center;
+    display: inherit;
+    justify-content: center;
+    cursor: pointer
+}
+
+.your-style__styles__box__text {
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: lighter;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* your-style box-backgrounds  */
+.background-classic {
+    background-image: url("./assets/img/classic.png");
+}
+
+.background-modern {
+    background-image: url("./assets/img/modern.png");
+}
+
+.background-industrial {
+    background-image: url("./assets/img/industrial.png");
+}
+
+.background-classic,
+.background-modern,
+.background-industrial {
+    opacity: 0.7;
+}
+
+.background-classic:hover,
+.background-modern:hover,
+.background-industrial:hover {
+    opacity: 0.9;
+}
+
+/* footer  */
+
+.footer {
+    background-color: #333333;
+    height: 243px;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+.footer__map {
+    width: 252px;
+    height: 163px;
+}
+
+.footer__map iframe {
+    border-radius: 19px;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+}
+
+.footer__find-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.footer__find-us__paragraph {
+    margin: 7px 0;
+    font-size: 0.7em;
+}
+
+.footer__social-media {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.footer__social-media__title {
+    margin-top: 12px;
+}
+
+.footer__social-media__icons i {
+    margin: 10px 12px 0;
+    font-size: 1.25em;
+    cursor: pointer;
+}
